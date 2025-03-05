@@ -1,0 +1,1 @@
+I struggled with the github registeration process. After asking for help I realized that I should open VPN for more stable connection to GitHub.
