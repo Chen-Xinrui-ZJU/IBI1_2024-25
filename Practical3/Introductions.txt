@@ -1,4 +1,4 @@
 Hello, my name is Blake.
-I like drinking tea and eating chocolate biscuits.
-I am enjoying learning IBI1 in person again 
+I like drinking tea and eating chocolate biscuits just like Robert!
+I am enjoying learning IBI1 in person.
 I am happy that I can push my repo from Visual Studio Code to GitHub
