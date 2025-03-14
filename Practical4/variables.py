@@ -17,4 +17,7 @@ else:
 X,Y=True,False
 W=X and Y
 print(W)
-#False
+#X=True Y=True W=True
+#X=True Y=False W=False
+#X=False Y=True W=False
+#X=False Y=False W=False
