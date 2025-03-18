@@ -1,4 +1,4 @@
-#define two variables to store weight and height
+#define two variables to store input weight and height
 #do calculation following equation : (weight)/(height)**2
 #use if-elif-else structure to put results into 3 categories
 #print
