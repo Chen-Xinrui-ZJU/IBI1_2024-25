@@ -21,3 +21,15 @@ if b in a: #to check if the language is in the dictionary
 else:
     print('Language not found, please check the spelling of the language you are searching for.')
     
+#Pseudocode:
+#first create a dictionary and input the data of language and percentage in pairs, and write print() to return the dictionary
+#To make barplot:
+#first import numpy and matplotlib.pyplot
+#set the column numbers, x locations for the bar, width for the bar
+#create a list named precentage to store the y ticks of the data
+#write a barplot creating command, set title, xticks, yticks and ylabels
+#show the barplot
+
+#write an if-else structure that:
+#print the corresponding percentage if the input language can be found within the dictionary
+#print "please check" message if the language can not be found

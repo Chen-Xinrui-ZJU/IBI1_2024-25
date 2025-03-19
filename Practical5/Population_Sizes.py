@@ -15,3 +15,12 @@ labels2 = 'Zhejiang','Fujian','Jiangxi','Anhui','Jiangsu'
 explode=(0,0,0.2,0,0)
 plt.pie(cn_provinces,explode=explode,labels=labels2,shadow=True,startangle=90)
 plt.show() 
+
+#Pseudocode:
+#create 2 lists to store the population data respectively
+#sort the lists then print them
+
+#To draw pie charts:
+#import matplotlib first
+#name two pie charts and set them with labels, datasource(the two lists created beforehand), explode or not, the data display form etc.)
+#print the pie
