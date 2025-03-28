@@ -1,0 +1,6 @@
+There are three projects in Practical6, and the difficulty of these projects is significantly higher than previous practicals
+In the first project SIR, I've learned a new calculating method. That is to add 1 to the individuals that meet the condition and add 0 to the others, then sum at last to get how many individuals meet the condition.
+The second project has the same underlying logic as the first one so the second one is not that hard, one of the most important point is that there exists some posibilities that negative outcome of some command may be generated, and to cope with this we should create a logic branch specifically for this condition.
+The third project is extremely hard for me. I noticed that guidance says there is a py document to show the main logic but I didn't find it. So I have to do it all on my own.
+However, my logic for the solution requires a function that we haven't learnt in our class yet but I learnt before, the zip code, which could combine multiple arrays into lists.
+I was very excited when I finally work out the limit condition for the neighbours because it's quite hard to find out a solution to tackle the border problem of infecting process.
