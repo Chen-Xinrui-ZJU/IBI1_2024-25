@@ -31,7 +31,6 @@ for gene,sequence in all:
             break
     if tata:
         newfile.write(f'>{gene}\t{number}\n{sequence_text}\n')
-
 newfile.close()
 database.close()
 
