@@ -21,12 +21,17 @@ elif DA == 'ATAC':
 else:
     print('Please enter the correct splice donor/acceptor combinations')
 for gene,sequence in all:
-    sequence_text=sequence.replace('\n','').upper()
-    splice=re.findall((f'{donor}'+r'[A-Z]*?'+f'{acceptor}'),sequence_text)          
+    sequence_text=sequence.replace('\n','')
+    splice=re.findall((f'{donor}'+r'[A-Z]*?'+f'{acceptor}'),sequence_text)
+    tata = False         
     for splice_sequence in splice:
         if re.findall(r'TATA[AT]A[AT]', splice_sequence):
+            tata = True
             number=len(re.findall(r'TATA[AT]A[AT]', splice_sequence))
-            newfile.write(f'>{gene}\t{number}\n{splice_sequence}\n')
+            break
+    if tata:
+        newfile.write(f'>{gene}\t{number}\n{sequence_text}\n')
+
 newfile.close()
 database.close()
 
