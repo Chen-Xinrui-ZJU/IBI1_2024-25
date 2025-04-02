@@ -10,6 +10,7 @@ ind = np.arange(N) #x locations for the groups
 width = 0.35 #width of the bar
 p1 = plt.bar(ind, percentage, width) #make a plot named p1, with x locations is ind, y locations is percentage and bar width is 0.35
 plt.ylabel('Percentage')
+plt.xlabel('Programming languages') #set x and y labels
 plt.title('Programming language popularity')
 plt.xticks(ind, ('JavaScript','HTML','Python','SQL','TypeScript')) #form a list of x ticks with labels
 plt.yticks(np.arange(0,100,10)) #form a list of y ticks 
