@@ -17,20 +17,18 @@ elif DA == 'GCAG':
 elif DA == 'ATAC': 
     donor = 'AT'
     acceptor = 'AC'
-    newfile=open(r'F:\^Course Material\IBI1\IBI1_2024-25\Practical7\ATAC_spliced_genes.fa','w')
+    newfile=open(r'F:\^Course Material\IBI1\IBI1_2024-25\Practical7\ATAC1_spliced_genes.fa','w')
 else:
     print('Please enter the correct splice donor/acceptor combinations')
 for gene,sequence in all:
     sequence_text=sequence.replace('\n','')
     splice=re.findall((f'{donor}'+r'[A-Z]*?'+f'{acceptor}'),sequence_text)
-    tata = False         
-    for splice_sequence in splice:
-        if re.findall(r'TATA[AT]A[AT]', splice_sequence):
-            tata = True
-            number=len(re.findall(r'TATA[AT]A[AT]', splice_sequence))
-            break
-    if tata:
-        newfile.write(f'>{gene}\t{number}\n{sequence_text}\n')
+    if splice:        
+    
+        number=len(re.findall(r'TATA[AT]A[AT]', sequence_text))
+        if number > 0 :
+            newfile.write(f'>{gene}\t{number}\n{sequence_text}\n')
+
 newfile.close()
 database.close()
 
