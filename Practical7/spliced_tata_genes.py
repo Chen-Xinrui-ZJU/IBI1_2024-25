@@ -3,7 +3,7 @@ import re
 database = open(r'F:\^Course Material\IBI1\IBI1_2024-25\Practical7\Saccharomyces_cerevisiae.R64-1-1.cdna.all.fa','r')
 text=database.read()
 all = re.findall(r'>.*?gene:(\S+).*?\n([A-Z\n]+)',text)
-DA = str(input('Please enter the splice donor/acceptor combinations： ')) 
+DA = str(input('Please enter the splice donor/acceptor combinations: ')) 
 donor=''
 acceptor=''
 if DA == 'GTAG':
