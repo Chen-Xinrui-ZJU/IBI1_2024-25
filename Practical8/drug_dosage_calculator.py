@@ -10,5 +10,7 @@ def dosage_calculator():
     else:
         volumn = 15*weight/strength*5
         return(volumn)
+
+# please find example of how to use function below
 result=dosage_calculator()
 print(f'The volume of paracetamol required is {result} ml.')
