@@ -5,8 +5,8 @@ import numpy as np
 os.chdir("F:/^Course Material/IBI1/IBI1_2024-25/Practical10")
 dalys_data = pd.read_csv("dalys-rate-from-all-causes.csv")
 
-#print(dalys_data.describe())
-#print(dalys_data.iloc[0:10,2]) #1999 was the 10th year for which DALYs were recorded in Afghanistan
+print(dalys_data.describe())
+print(dalys_data.iloc[0:10,2]) #1999 was the 10th year for which DALYs were recorded in Afghanistan
 
 yrs=dalys_data.iloc[:,2]
 my_row=[]
@@ -15,7 +15,7 @@ for yr in yrs:
         my_row.append(True)
     else:
         my_row.append(False)
-#print(dalys_data.iloc[my_row,:])
+print(dalys_data.iloc[my_row,:])
 
 uk = dalys_data.loc[dalys_data.Entity=="United Kingdom", ["DALYs", "Year"]]
 fr = dalys_data.loc[dalys_data.Entity=="France", ["DALYs", "Year"]]
