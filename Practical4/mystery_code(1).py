@@ -1,5 +1,5 @@
 # What does this piece of code do?
-# Answer: It's a command to show how many times the two random command take to generate the same integer
+# Answer: It's a command to show how many times the two random command take to generate the same integer ranging from 1-6
 
 # Import libraries
 # randint allows drawing a random number,
