@@ -6,13 +6,13 @@ print(sorted(cn_provinces))#sort and print
 import matplotlib.pyplot as plt 
 
 labels1 = 'England','Wales','Northern Ireland','Scotland'
-explode=(0,0,0.2,0) #to set the explode distance from center
-plt.pie(uk_countries,explode=explode,labels=labels1,autopct='%1.1f%%',shadow=True,startangle=0) #form a pie chart
+#to set the explode distance from center
+plt.pie(uk_countries,labels=labels1,autopct='%1.1f%%',shadow=True,startangle=0) #form a pie chart
 plt.axis('equal') #ensure it forms a whole pie
 plt.show()#print the pie
 
 labels2 = 'Zhejiang','Fujian','Jiangxi','Anhui','Jiangsu'
-explode=(0,0,0.2,0,0)
+explode=(0.2,0,0,0,0) #to set the explode distance from center
 plt.pie(cn_provinces,explode=explode,labels=labels2,shadow=True,startangle=90)
 plt.show() 
 
