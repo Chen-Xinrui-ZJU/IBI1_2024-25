@@ -17,7 +17,7 @@ elif DA == 'GCAG':
 elif DA == 'ATAC': 
     donor = 'AT'
     acceptor = 'AC'
-    newfile=open(r'F:\^Course Material\IBI1\IBI1_2024-25\Practical7\ATAC1_spliced_genes.fa','w')
+    newfile=open(r'F:\^Course Material\IBI1\IBI1_2024-25\Practical7\ATAC_spliced_genes.fa','w')
 else:
     print('Please enter the correct splice donor/acceptor combinations')
 for gene,sequence in all:
